@@ -10,10 +10,10 @@ jobs:
     environment: "${{ inputs.environment }}"
     runs-on: ubuntu-latest
     env:
-      MONGODB_CLUSTER_ADDRESS: ${{ vars.MONGODB_CLUSTER_ADDRESS }}
-      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
-      MONGODB_DB_NAME: ${{ vars.MONGODB_DB_NAME }}
+      MONGODB_CLUSTER_ADDRESS: devcluster.wlwdmq3.mongodb.net
+      MONGODB_USERNAME: dimitar
+      MONGODB_PASSWORD: eNeVn0MuRXW5wchZ
+      MONGODB_DB_NAME: devcluster
       CI: true
     steps:
       - name: Get Code
